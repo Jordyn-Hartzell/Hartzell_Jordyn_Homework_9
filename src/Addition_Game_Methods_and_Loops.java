@@ -4,26 +4,56 @@ public class Addition_Game_Methods_and_Loops {
 		//System.out.println("Hello");
 		
 		
-		quizQuestions();
+		additionQuizMethod();
+	
 		
 	}
-	public static void quizQuestions(){
-		for (int round=1; round<5; round++){
-		int score = 0;
-		int difficulty = 10;
-		int numberOne = (int)(Math.random() * difficulty);
-		int numberTwo = (int)(Math.random() * difficulty);
-		int correctAnswer = numberOne + numberTwo;
-		System.out.println("What is " + numberOne + " + " + numberTwo + "?");
-		Scanner input = new Scanner(System.in);
-		int answer = input.nextInt();
-		if(answer == correctAnswer){
-			System.out.println("Correct");
-			score += difficulty;
-			difficulty *= 10;
-			System.out.println("End of round " + round + ".\n");
+	public static void additionQuizMethod(){
+		int score              = 0;
+ 		int questionDifficulty = 10;
+ 		
+ 		// Establish rounds and increment them
+ 		for(int round=1; round<5; round++){
+ 		
+ 		// Generate random numbers
+ 		int number1 = (int)(Math.random() * questionDifficulty);
+ 		int number2 = (int)(Math.random() * questionDifficulty);
+ 		
+ 		// Present problem to the user
+ 		System.out.print("\nWhat integer is " + number1 + " + " + 
+ 				number2 + "? ");
+ 		
+ 		// Prompt user input
+ 		Scanner input = new Scanner(System.in);
+ 		int answer    = input.nextInt();
+ 		
+ 		// Determine if answer was correct
+ 		int correctAnswer = number1 + number2;
+ 		
+ 		// Establish what to do based on input
+ 		if(answer == correctAnswer){
+ 			// Give points
+ 			score += questionDifficulty;
+ 			System.out.println("Correct!\nYou've earned " + score + 
+ 					" points.");
+ 			// Increase difficulty
+ 			questionDifficulty *= 10;
+ 			System.out.println("End of round " + round + ".");
+ 		}else{
+ 			System.out.println("Incorrect!\nNo points awarded.");
+ 			// Output correct answer
+ 			System.out.println("Correct answer was: " + 
+ 					correctAnswer);
+ 			// Lessen the difficulty
+ 			if(questionDifficulty > 10){
+ 				questionDifficulty /= 10;
+ 			System.out.println("End of round " + round + ".");
+  			}
+		
+		
 		}
 		
-}
+	}
 	}
 }
+
