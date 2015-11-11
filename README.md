@@ -3,7 +3,232 @@
 ### Outline
 ### References
 # Code
+```java
+import java.util.Scanner;
+public class Addition_Game_Methods_and_Loops {
+	public static void main(String[] args) {
+		/* This line was used to make sure the program was running.
+		System.out.println("Hello");*/
+		
+		// Output opening message and instructions
+		System.out.println("Welcome to the addition game!");
+		System.out.println("Please input integers only.");
+		System.out.println("Good luck!\n");
+		
+		// Call the addition game method to run
+		additonGameMethod();
+	}	
+	// Create method for the addition game
+	public static void additonGameMethod(){
+		/* This was used to check that the method was working.
+		System.out.println("If this runs, additionGameMethod works");*/
+		
+		// Establish variables for difficulty and score
+		int difficulty = 10;
+		int score = 0;
+		
+		
+		// For loop to increment 4 rounds
+		for(int round = 1; round <= 4; round++){
+			
+			// This boolean was copied from Jeremy Evert's Addition Game on Github.
+			boolean isAnswerCorrect = checkStudentAnswer(difficulty);
+			
+			// Output based on correct answer
+			if(isAnswerCorrect){
+				// Increase and output score
+				score = score + difficulty;
+				System.out.println("You have earned " + score + " points.");
+				
+				if(round < 4){
+					// Increase and output difficulty
+					difficulty = difficulty * 10;
+					System.out.println("Your difficulty has increased to " + difficulty + ".");
+				}
+			// Output based on incorrect answer
+			}else{
+				System.out.println("Your score is still " + score + ".");
+				if(round < 4){
+					if(difficulty > 10){
+						// Decrease and output difficulty
+						difficulty = difficulty / 10;
+						System.out.println("Your difficulty has decreased to " + difficulty + ".");
+					}
+				}
+				
+			}
+			// Output round number
+			System.out.println("End of round " + round + "\n");
+		}
+		// Message at the end of the game
+		System.out.println("You have reached the end of the game.");
+		System.out.print("Total Score: " + score + "/11110");
+	}	
+		/* Part of this method was also copied from Jeremy Evert's Addition Game on Github.*/
+		// Create method to check if the answer is correct
+		public static boolean checkStudentAnswer(int difficulty) {
+		
+		/* This was used to check that the method was working.
+		System.out.println("If this runs, checkStudentAnswer works");*/
+		
+		int number1 = (int)(Math.random() * difficulty);
+		int number2 = (int)(Math.random() * difficulty);
+		
+		// Prompt user with question
+		System.out.print("What is " + number1 + " + " + number2 +"? ");
+		Scanner get = new Scanner(System.in);
+		int answer = get.nextInt();
+		
+		// Correct formula
+		int correctAnswer = number1 + number2;
+		
+		// Output based on correct answer
+		if(answer == correctAnswer){
+			System.out.println("Correct!");
+			return true;
+		// Output based on incorrect answer
+		}else{
+			System.out.println("Sorry, that was incorrect.\nThe correct answer was " 
+					+ correctAnswer + ".");
+			return false;
+		}
+	}
+}
+```
 ## Console
+Examples:
+This is an example of all correct answers. The score and difficulty increase every round.
+```
+Welcome to the addition game!
+Please input integers only.
+Good luck!
+
+What is 1 + 7? 8
+Correct!
+You have earned 10 points.
+Your difficulty has increased to 100.
+End of round 1
+
+What is 12 + 8? 20
+Correct!
+You have earned 110 points.
+Your difficulty has increased to 1000.
+End of round 2
+
+What is 627 + 414? 1041
+Correct!
+You have earned 1110 points.
+Your difficulty has increased to 10000.
+End of round 3
+
+What is 2788 + 87? 2875
+Correct!
+You have earned 11110 points.
+End of round 4
+
+You have reached the end of the game.
+Total Score: 11110/11110
+```
+This is an example with all incorrect answers. The score never increases, and the difficulty never decreases because it is already at the lowest difficulty.
+```
+Welcome to the addition game!
+Please input integers only.
+Good luck!
+
+What is 4 + 3? 0
+Sorry, that was incorrect.
+The correct answer was 7.
+Your score is still 0.
+End of round 1
+
+What is 9 + 2? 0
+Sorry, that was incorrect.
+The correct answer was 11.
+Your score is still 0.
+End of round 2
+
+What is 5 + 5? 0
+Sorry, that was incorrect.
+The correct answer was 10.
+Your score is still 0.
+End of round 3
+
+What is 6 + 0? 0
+Sorry, that was incorrect.
+The correct answer was 6.
+Your score is still 0.
+End of round 4
+
+You have reached the end of the game.
+Total Score: 0/11110
+```
+This example shows an incorrect answer during rounds 3 and 4. The score does not increase for these rounds, and the difficulty decreases for both rounds.
+```
+Welcome to the addition game!
+Please input integers only.
+Good luck!
+
+What is 5 + 2? 7
+Correct!
+You have earned 10 points.
+Your difficulty has increased to 100.
+End of round 1
+
+What is 69 + 63? 132
+Correct!
+You have earned 110 points.
+Your difficulty has increased to 1000.
+End of round 2
+
+What is 934 + 955? 0
+Sorry, that was incorrect.
+The correct answer was 1889.
+Your score is still 110.
+Your difficulty has decreased to 100.
+End of round 3
+
+What is 12 + 87? 0
+Sorry, that was incorrect.
+The correct answer was 99.
+Your score is still 110.
+End of round 4
+
+You have reached the end of the game.
+Total Score: 110/11110
+```
+This example shows an incorrect answer in round 3. The amount of points awarded for the correct answer has decreased along with the difficulty.
+```
+Welcome to the addition game!
+Please input integers only.
+Good luck!
+
+What is 5 + 2? 7
+Correct!
+You have earned 10 points.
+Your difficulty has increased to 100.
+End of round 1
+
+What is 78 + 20? 98
+Correct!
+You have earned 110 points.
+Your difficulty has increased to 1000.
+End of round 2
+
+What is 787 + 609? 0
+Sorry, that was incorrect.
+The correct answer was 1396.
+Your score is still 110.
+Your difficulty has decreased to 100.
+End of round 3
+
+What is 34 + 77? 111
+Correct!
+You have earned 210 points.
+End of round 4
+
+You have reached the end of the game.
+Total Score: 210/11110
+```
 ### Command Prompt
 First I navigated to my project.
 ```
@@ -130,4 +355,7 @@ To https://github.com/Jordyn-Hartzell/Hartzell_Jordyn_Homework_9.git
  * [new branch]      dev -> dev
 Branch dev set up to track remote branch dev from origin.
 ```
+After I was satisfied with my code, I merged the working code from the dev branch into the master branch.
+```
+
 # Summary
