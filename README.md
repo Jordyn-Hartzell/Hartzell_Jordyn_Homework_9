@@ -358,4 +358,61 @@ Branch dev set up to track remote branch dev from origin.
 After I was satisfied with my code, I merged the working code from the dev branch into the master branch.
 ```
 
+E:\Jordyn_CS1_Workspace\Hartzell_Jordyn_Homework_9>git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+
+E:\Jordyn_CS1_Workspace\Hartzell_Jordyn_Homework_9>git merge dev
+Updating 7966000..2178c03
+Fast-forward
+ .classpath                                |   6 +
+ .project                                  |  17 ++
+ README.md                                 | 360 ++++++++++++++++++++++++++++++
+ bin/Addition_Game_Methods_and_Loops.class | Bin 0 -> 2283 bytes
+ src/Addition_Game_Methods_and_Loops.java  |  90 ++++++++
+ 5 files changed, 473 insertions(+)
+ create mode 100644 .classpath
+ create mode 100644 .project
+ create mode 100644 bin/Addition_Game_Methods_and_Loops.class
+ create mode 100644 src/Addition_Game_Methods_and_Loops.java
+```
+I pushed the changes to the remote repository to catch it up to my local repository.
+```
+E:\Jordyn_CS1_Workspace\Hartzell_Jordyn_Homework_9>git add .
+
+E:\Jordyn_CS1_Workspace\Hartzell_Jordyn_Homework_9>git commit -m "Merged dev cod
+e into master branch"
+On branch master
+Your branch is ahead of 'origin/master' by 7 commits.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+
+E:\Jordyn_CS1_Workspace\Hartzell_Jordyn_Homework_9>git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': jordyn-hartzell
+Password for 'https://jordyn-hartzell@github.com':
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/Jordyn-Hartzell/Hartzell_Jordyn_Homework_9.git
+   7966000..2178c03  master -> master
+```
 # Summary
