@@ -1,7 +1,35 @@
 # Hartzell_Jordyn_Homework_9 
+##### COMSC-1033 Sec. 1411, Jordyn Hartzell, HW 9
 ## Introduction
+This program is an addition game that quizzes the user using addition problems. It has four rounds that increase or decrease in difficulty and award points based on the difficulty. This program uses print statements, a Scanner, for loop, if/else and nested if/else statements, and custom methods.
 ### Outline
+```java
+// Output opening statements
+// Call method for addition game
+// Establish variables for score and difficulty
+// Loop for 4 rounds
+// Call method to check if answer is correct
+// If answer is correct
+	// Award points
+	// Increase difficulty
+// If answer is incorrect
+	// Output correct answer
+	// Decrease difficulty
+// Output ending message
+// Output total score
+```
 ### References
+```java
+// Liang Java 10th edition. Pg 204, 6.2.
+// modifier returnValueType methodName(list of parameteres){
+	Method body;
+     }
+// This listing shows the proper syntax for defining a method.
+
+// Evert, Jeremy "AdditionGameLoopsMethods" Github (https://github.com/swosu/AdditonGameLoopMethods.git)
+// boolean isAnswerCorrect = getAndCheckStudentAnswer(hardness);
+// public static boolean getAndCheckStudentAnswer(int hardness)
+// This shows how to use a boolean with a method to check if the answer is correct.
 # Code
 ```java
 import java.util.Scanner;
@@ -196,7 +224,7 @@ End of round 4
 You have reached the end of the game.
 Total Score: 110/11110
 ```
-This example shows an incorrect answer in round 3. The amount of points awarded for the correct answer has decreased along with the difficulty.
+This example shows an incorrect answer in round 3. The amount of points awarded for the correct answer in round 4 has decreased along with the difficulty.
 ```
 Welcome to the addition game!
 Please input integers only.
@@ -253,7 +281,7 @@ E:\Jordyn_CS1_Workspace\Hartzell_Jordyn_Homework_9>dir
                2 File(s)            634 bytes
                4 Dir(s)   7,915,307,008 bytes free
 ```
-After I found my project, I used the GitHub instructions to sync my local repo to the remote repo. I also had to configure my user information to avoid an error.
+After I found my project, I used the GitHub instructions to sync my local repository to the remote repository. I also had to configure my user information to avoid an error.
 ```
 E:\Jordyn_CS1_Workspace\Hartzell_Jordyn_Homework_9>echo # Hartzell_Jordyn_Homewo
 rk_9 >> README.md
@@ -416,3 +444,4 @@ To https://github.com/Jordyn-Hartzell/Hartzell_Jordyn_Homework_9.git
    7966000..2178c03  master -> master
 ```
 # Summary
+This project was involving our good old friend the addition game. We have used this code a few times now, but this week we had to use loops and methods to rework the code. During my first go around with the addition game I had already used a for loop so I felt pretty comfortable with that concept, so for me, this assignment was mainly about learning how to use custom methods. I learned why we use methods and the basic concepts of how to use them. I would like to continue working with methods because I don't feel very confident with them yet. 
