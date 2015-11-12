@@ -1,7 +1,7 @@
 # Addition Game: Methods and Loops
 ##### COMSC-1033 Sec. 1411, Jordyn Hartzell, HW 9
 ## Introduction
-This program is an addition game that quizzes the user using addition problems. It has four rounds that increase or decrease in difficulty and award points based on the difficulty. This program uses print statements, a Scanner, for loop, if/else and nested if/else statements, and custom methods.
+This program is an addition game that quizzes the user using addition problems. It has four rounds that increase or decrease in difficulty. It awards points based on the difficulty. This program uses print statements, a Scanner, for loop, if/else and nested if/else statements, and custom methods.
 ### Outline
 ```java
 // Output opening statements
@@ -447,4 +447,4 @@ To https://github.com/Jordyn-Hartzell/Hartzell_Jordyn_Homework_9.git
    7966000..2178c03  master -> master
 ```
 # Summary
-This project was involving our good old friend the addition game. We have used this code a few times now, but this week we had to use loops and methods to rework the code. During my first go around with the addition game I had already used a for loop so I felt pretty comfortable with that concept, so for me, this assignment was mainly about learning how to use custom methods. I learned why we use methods and the basic concepts of how to use them. I would like to continue working with methods because I don't feel very confident with them yet. 
+This project involved reworking our good old friend the addition game. We have used this code a few times now, but this week we had to use loops and methods to run the code. During my first go around with the addition game I had already used a for loop so I felt pretty comfortable with that concept, so for me, this assignment was mainly about learning how to create methods. I learned why we use methods and the basic concepts of how to use them. I would like to continue working with methods because I don't feel very confident with them yet. I also realized this week that there are many different ways you can write a program. We have already seen multiple ways to code the addition game and I think it's beneficial to rework code we have already used because we know how the program is supposed to function.
