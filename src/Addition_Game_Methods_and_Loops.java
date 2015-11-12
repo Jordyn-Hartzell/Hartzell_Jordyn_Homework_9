@@ -24,6 +24,7 @@ public class Addition_Game_Methods_and_Loops {
 		
 		// For loop to increment 4 rounds
 		for(int round = 1; round <= 4; round++){
+			System.out.println("If the for loop works, the round should display. " + round);
 			
 			// This boolean was copied from Jeremy Evert's Addition Game on Github.
 			boolean isAnswerCorrect = checkStudentAnswer(difficulty);
