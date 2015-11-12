@@ -1,5 +1,6 @@
 # Addition Game: Methods and Loops
 ##### COMSC-1033 Sec. 1411, Jordyn Hartzell, HW 9
+(https://github.com/Jordyn-Hartzell/Hartzell_Jordyn_Homework_9.git)
 ## Introduction
 This program is an addition game that quizzes the user using addition problems. It has four rounds that increase or decrease in difficulty. It awards points based on the difficulty. This program uses print statements, a Scanner, for loop, if/else and nested if/else statements, and custom methods.
 ### Outline
@@ -20,8 +21,9 @@ This program is an addition game that quizzes the user using addition problems. 
 ```
 ### References and Literature
 ```java
-// Hartzell, Jordyn "Hartzell_Jordyn_Homework_9" Github (https://github.com/Jordyn-Hartzell/Hartzell_Jordyn_Homework_9.git)
-// Link to my program on Github.
+// Hartzell, Jordyn "CS1_Homework6_AdditionGame" Github (https://github.com/Jordyn-Hartzell/CS1_Homework6_AdditionGame)
+// This was the original addition game that I had written.
+// I used this as a general layout and referenced pieces of it for some of the features. 
 
 // Liang Java 10th edition. Pg 204, 6.2.
 // modifier returnValueType methodName(list of parameteres){
