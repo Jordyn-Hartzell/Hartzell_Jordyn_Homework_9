@@ -132,6 +132,32 @@ public class Addition_Game_Methods_and_Loops {
 }
 ```
 ## Console
+This is a test run for the loop and methods.
+```
+Hello
+If this runs, additionGameMethod works
+If the for loop works, the round should display. 1
+If this runs, checkStudentAnswer works
+What is 5 + 8? 13
+Correct!
+
+If the for loop works, the round should display. 2
+If this runs, checkStudentAnswer works
+What is 6 + 2? 8
+Correct!
+
+If the for loop works, the round should display. 3
+If this runs, checkStudentAnswer works
+What is 8 + 4? 0
+Sorry, that was incorrect.
+
+If the for loop works, the round should display. 4
+If this runs, checkStudentAnswer works
+What is 5 + 5? 0
+Sorry, that was incorrect.
+
+You have reached the end of the game.
+```
 This is an example of all correct answers. The score and difficulty increase every round.
 ```
 Welcome to the addition game!
